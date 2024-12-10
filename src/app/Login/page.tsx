@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Form, Input, Button, Divider } from 'antd';
+import Footer from '@/components/Footer/Footer';
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true); // To toggle between login and signup forms
 
@@ -50,6 +51,7 @@ const Login = () => {
         </div>
        
       </div>
+      <Footer/>
     </section>
   );
 };

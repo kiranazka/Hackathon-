@@ -18,7 +18,7 @@ export default function Home() {
          <Header/>
          <Hero/>
          <FeaturedProducts/>
-          {/* <FilterSection/> */}
+           {/* <FilterSection textTitle={""} textNavigation={""} pageName={""}/> */}
          <LatestProducts/>
          <OutletSection/>
         <DiscountItem/>

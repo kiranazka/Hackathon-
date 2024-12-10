@@ -2,6 +2,8 @@
 import React from 'react';
 import Image from 'next/image';
 import FilterSection from '@/components/Product/FilterSection';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 const Blog = () => {
   const blogPosts = [
     {
@@ -58,7 +60,12 @@ const Blog = () => {
           ))}
         </div>
       </div>
+     
+        <Footer />
+    
+     
     </section>
+  
   );
 };
 

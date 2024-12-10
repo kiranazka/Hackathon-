@@ -1,43 +1,46 @@
+import Footer from "@/components/Footer/Footer";
 import FilterSection from "@/components/Product/FilterSection";
+
 import Image from "next/image";
 import React from "react";
 
-const Shop = [
-  {
-    name: "Ut diam consequat",
-    color: "Brown",
-    size: "XL",
-    img: "/SaleProduct/Pro1.png",
-  },
-  {
-    name: "Vel faucibus posuere",
-    color: "Brown",
-    size: "XL",
-    img: "/SaleProduct/Pro2.png",
-  },
-  {
-    name: "Ac vitae vestibulum",
-    color: "Brown",
-    size: "XL",
-    img: "/SaleProduct/Pro3.png",
-  },
-  {
-    name: "Elit massa diam",
-    color: "Brown",
-    size: "XL",
-    img: "/SaleProduct/Pro4.png",
-  },
-  {
-    name: "Proin pharetra elementum",
-    color: "Brown",
-    size: "XL",
-    img: "/SaleProduct/Pro5.png",
-  },
-];
-
 const Page = () => {
+  const shopItems = [
+  
+    {
+      name: "Ut diam consequat",
+      color: "Brown",
+      size: "XL",
+      img: "/SaleProduct/Pro1.png",
+    },
+    {
+      name: "Vel faucibus posuere",
+      color: "Brown",
+      size: "XL",
+      img: "/SaleProduct/Pro2.png",
+    },
+    {
+      name: "Ac vitae vestibulum",
+      color: "Brown",
+      size: "XL",
+      img: "/SaleProduct/Pro3.png",
+    },
+    {
+      name: "Elit massa diam",
+      color: "Brown",
+      size: "XL",
+      img: "/SaleProduct/Pro4.png",
+    },
+    {
+      name: "Proin pharetra elementum",
+      color: "Brown",
+      size: "XL",
+      img: "/SaleProduct/Pro5.png",
+    },
+  ];
+
   return (
-    <section className="py-3 md:px-0 px-5 pb-10 ">
+    <section className="py-3 md:px-0 px-5 pb-10">
       {/* Filter Section */}
       <FilterSection
         textTitle="Shopping Cart"
@@ -55,7 +58,7 @@ const Page = () => {
             <p>Total</p>
           </div>
 
-        {Shop.map((item, index) => (
+          {shopItems.map((item, index) => (
             <div
               key={index}
               className="mt-6 grid grid-cols-1 lg:grid-cols-3 items-center gap-y-4 border-b border-gray-200 pb-4"
@@ -101,22 +104,20 @@ const Page = () => {
             Cart Total
           </h2>
           <div className="mt-5 flex justify-center">
-          <div className="bg-gray-100 p-6 mt-5 rounded-md space-y-5">
-            <div className="border-b flex justify-between ">
-              <h1 className="text-[#1D3178] font-semibold" >Subtotals:</h1>
-              <h2 className="text-[#1D3178] font-semibold" >£219.00</h2>
-            </div>
-            <div>
+            <div className="bg-gray-100 p-6 mt-5 rounded-md space-y-5">
               <div className="border-b flex justify-between">
-              <h1 className="text-[#1D3178] font-semibold" >Totals:</h1>
-              <h2 className="text-[#1D3178] font-semibold" >£325.0</h2>
+                <h1 className="text-[#1D3178] font-semibold">Subtotals:</h1>
+                <h2 className="text-[#1D3178] font-semibold">£219.00</h2>
               </div>
+              <div className="border-b flex justify-between">
+                <h1 className="text-[#1D3178] font-semibold">Totals:</h1>
+                <h2 className="text-[#1D3178] font-semibold">£325.0</h2>
+              </div>
+              <p>Shipping & taxes calculated at checkout</p>
+              <button className="w-full bg-[#19D16F] hover:bg-green-400 text-sm text-white font-semibold py-2">
+                Calculate Shipping
+              </button>
             </div>
-            <p className="">Shipping & taxes calculated at checkout</p>
-            <button className="w-full bg-[#19D16F] hover:bg-green-400 text-sm text-white font-semibold py-2">
-              Calculate Shipping
-            </button>
-          </div>
           </div>
 
           <h2 className="text-xl font-semibold text-gray-800 text-center mt-8">
@@ -144,8 +145,9 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 };
 
-export default Shop;
+export default Page;

@@ -1,9 +1,13 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import Footer from '@/components/Footer/Footer';
+
 
 const Contact = () => {
+ 
   return (
+   
     <section className="py-10 bg-[#F6F5FF]">
       <div className="container mx-auto px-4">
         {/* Heading */}
@@ -62,7 +66,7 @@ const Contact = () => {
           {/* Image */}
           <div className="w-full md:w-1/2 max-w-xs">
             <Image
-              src={'/Contectimage.png'} // Replace with your image path
+              src={"/Image/Contectimage.png"} // Replace with your image path
               alt="Contact Us"
               width={300}
               height={400}
@@ -71,6 +75,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 };

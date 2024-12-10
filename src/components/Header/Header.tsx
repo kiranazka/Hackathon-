@@ -109,7 +109,7 @@ const Header: React.FC = () => {
 
         <div className="group flex items-center">
           <Link
-            href={'/Page'}
+            href={'/Pages'}
             className="text-gray-700 hover:text-[#FB2E86] py-2 lg:py-0"
           >
             Pages
@@ -133,7 +133,7 @@ const Header: React.FC = () => {
 
         <div className="group flex items-center">
           <Link
-            href={'/blog'}
+            href={'/Blog'}
             className="text-gray-700 hover:text-[#FB2E86] py-2 lg:py-0"
           >
             Blog
